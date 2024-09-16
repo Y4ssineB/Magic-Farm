@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Products - Le Jardin Magique</title>
+    <link rel="stylesheet" href="/css/Styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<audio id="notificationSound" src="./audio/Bird sound.mp3"></audio>
+<body>
+    <header>
+        <h1>Le Jardin Magique</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="client_product.html">Products</a>
+            <a href="client_cart.html">Cart</a>
+            <a href="contact_us.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div id="product-list" class="product">
+            <!-- <div class="product-item">
+                <div class="product-content">
+                    <img src="images/Tomatoes.png" alt="tomatoes" class="product-image">
+                    <div class="product-details">
+                        <h2 class="product-name">Tomatoes</h2>
+                        <p class="product-price">Price: 5 dh/kg</p>
+                        <p class="product-description">Fresh, organic tomatoes grown with care in our farm. Perfect for salads, sauces, and more.</p>
+                        <div class="product-actions">
+                            <label for="quantity-tomatoes" style="color: rgb(0, 0, 0);">Insert Quantity in kg:</label>
+                            <input type="number" id="quantity-tomatoes" name="quantity" min="1" value="1" class="quantity-input">
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-content">
+                    <img src="images/apples.png" alt="apples" class="product-image">
+                    <div class="product-details">
+                        <h2 class="product-name">Apples</h2>
+                        <p class="product-price">Price: 12 dh/kg</p>
+                        <p class="product-description">Crisp and delicious organic apples, picked at peak ripeness for the best flavor.</p>
+                        <div class="product-actions">
+                            <label for="quantity-apples" style="color: rgb(0, 0, 0);">Insert Quantity in kg:</label>
+                            <input type="number" id="quantity-apples" name="quantity" min="1" value="1" class="quantity-input">
+                            <button class="add-to-cart" onclick="saveQuantity('apples')">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-content">
+                    <img src="images/potatoes.png" alt="potatoes" class="product-image">
+                    <div class="product-details">
+                        <h2 class="product-name">Potatoes</h2>
+                        <p class="product-price">Price: 3 dh/kg</p>
+                        <p class="product-description">Perfect for every meal, these fresh, hearty potatoes bring natural flavor and quality to your dishes.</p>
+                        <div class="product-actions">
+                            <label for="quantity-tomatoes" style="color: rgb(0, 0, 0);">Insert Quantity in kg:</label>
+                            <input type="number" id="quantity-tomatoes" name="quantity" min="1" value="1" class="quantity-input">
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Product quantity has been added to the cart successfully.</p>
+                    <img id="modalImage" src="./images/bird.png" alt="Product Image" style="width: 50%; height: auto; margin-bottom: 20px;">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
